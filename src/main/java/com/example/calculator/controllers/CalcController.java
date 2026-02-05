@@ -13,9 +13,9 @@ public class CalcController{
         return "Holis mundo! Esta es la calculadora: ";
     }
     
-    @GetMapping("/suma/{n1}/{n2}")
-    public String suma(@PathVariable int n1, @PathVariable int n2){
-        int resultado=n1+n2; //va a agarrar el valor 1 que le mandemos desde el enlace para hacer la suma
+    @GetMapping("/resta/{n1}/{n2}")
+    public String resta(@PathVariable int n1, @PathVariable int n2){
+        int resultado=n1-n2; //va a agarrar el valor 1 que le mandemos desde el enlace para hacer la suma
         return "Resultado: "+resultado;
     }
 
