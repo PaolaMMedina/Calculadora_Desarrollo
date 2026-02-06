@@ -19,5 +19,15 @@ public class CalcController{
         return "Resultado: "+resultado;
     }
 
+    //http://localhost:8080/suma-param?n1=5&n2=3
+
+    @GetMapping("/suma-param")
+    public String sumaParam(
+            @RequestParam int n1,
+            @RequestParam int n2
+    ) {
+        return "Resultado: " + (n1 + n2);
+    }
+
 }
 
